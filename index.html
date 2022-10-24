@@ -21,27 +21,44 @@
             <a class="logo" href="./index.html" lang="en">Ol P<span class="logo__web logo__web--black">Web</span></a>
             <ul class="page-header__menu menu">
               <li class="menu__item">
-                <a class="menu__link" href="">Приклади позиціонування</a>
+                <a class="menu__link" href="">Властивість <span class="unique-text">"transform: "</span></a>
                 <ul class="sub-menu">
                   <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="#static">: static</a>
+                    <a class="sub-menu__link" href="#translate">translate (x, y)</a>
                   </li>
                   <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="#relative">: relative</a>
+                    <a class="sub-menu__link" href="#scale">scale (x, y)</a>
                   </li>
                   <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="#absolute">: absolute</a>
+                    <a class="sub-menu__link" href="#rotate">rotate(n + deg)</a>
                   </li>
                   <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="#fixed">: fixed</a>
+                    <a class="sub-menu__link" href="#skew">skew(x + deg, y + deg)</a>
                   </li>
                   <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="#sticky">: sticky</a>
+                    <a class="sub-menu__link" href="#matrix">matrix (a, c, b, d, x, y)</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a class="sub-menu__link" href="#multiple-2d"
+                      >(multiple-2d): translate(30px, 30px) rotate(45deg) scale(0.8)</a
+                    >
+                  </li>
+                  <li class="sub-menu__item">
+                    <a class="sub-menu__link" href="#transform-origin">transform-origin</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a class="sub-menu__link" href="#perspective">perspective, perspective-origin</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a class="sub-menu__link" href="#transform-style">transform-style</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a class="sub-menu__link" href="#backface-visibility">backface-visibility</a>
                   </li>
                 </ul>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#battlefield">Поле бою</a>
+                <a class="menu__link" href="#battlefield">UFO</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="">Контакти</a>
@@ -51,10 +68,68 @@
         </div>
       </header>
       <main>
-        <section class="examples"></section>
-        <h1 class="examples__main-title title">CSS властивість transform</h1>
+        <h1 class="main-title title">CSS властивість transform</h1>
+        <section class="examples">
+          <div class="examples__container">
+            <div id="translate" class="examples__items translate">
+              <h2 class="translate__title title">Властивість transform: translate(x, y)</h2>
+              <div class="translate__body"></div>
+            </div>
+
+            <div id="scale" class="examples__items scale">
+              <h2 class="scale__title title">Властивість transform: scale(x, y)</h2>
+              <div class="scale__body"></div>
+            </div>
+
+            <div id="rotate" class="examples__items rotate">
+              <h2 class="rotate__title title">Властивість transform: rotate(n + deg)</h2>
+              <div class="rotate__body"></div>
+            </div>
+
+            <div id="skew" class="examples__items skew">
+              <h2 class="skew__title title">Властивість transform: skew(n + deg)</h2>
+              <div class="skew__body"></div>
+            </div>
+
+            <div id="matrix" class="examples__items matrix">
+              <h2 class="matrix__title title">Властивість transform: matrix(a, b, c, d, tx, ty)</h2>
+              <div class="matrix__body"></div>
+            </div>
+
+            <div id="multiple-2d" class="examples__items multiple-2d">
+              <h2 class="multiple-2d__title title">
+                multiple-2d transform: translate(30px, 30px) rotate(45deg) scale(0.8)
+              </h2>
+              <div class="multiple-2d__body"></div>
+            </div>
+
+            <div id="transform-origin" class="examples__items transform-origin">
+              <h2 class="transform-origin__title title">Властивість transform-origin</h2>
+              <div class="transform-origin__body"></div>
+            </div>
+
+            <div id="perspective" class="examples__items perspective">
+              <h2 class="perspective__title title">Властивість perspective, perspective-origin</h2>
+              <div class="perspective__body"></div>
+            </div>
+
+            <div id="transform-style" class="examples__items transform-style">
+              <h2 class="transform-style__title title">Властивість transform-style</h2>
+              <div class="transform-style__body"></div>
+            </div>
+
+            <div id="backface-visibility" class="examples__items backface-visibility">
+              <h2 class="backface-visibility__title title">Властивість backface-visibility</h2>
+              <div class="backface-visibility__body">
+                <p>Backface-visibility</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer class="page-footer"></footer>
+      <footer class="page-footer">
+        <div class="page-footer_container"></div>
+      </footer>
     </div>
   </body>
 </html>

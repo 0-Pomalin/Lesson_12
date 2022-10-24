@@ -5,8 +5,8 @@ body {
 
 .wrapper {
   position: relative;
-  /* overflow: hidden; */
-  padding-top: 65px;
+  overflow: hidden;
+  padding-top: 50px;
   min-height: 100%;
 }
 
@@ -104,22 +104,179 @@ body {
   color: #2196f3;
 }
 
+.unique-text {
+  font-weight: 500;
+  font-size: 20px;
+}
+
 .title {
   font-weight: 700;
   font-size: 28px;
   line-height: 1.5;
   text-align: center;
+  outline: 2px solid #2196f3;
 }
 
-.examples__main-title {
+.main-title {
   font-weight: 900;
   font-size: 38px;
   color: tomato;
+  margin-bottom: 20px;
+  outline: none;
 }
 
 /* section examples*/
 
 .examples {
+  background-color: #333;
+  padding: 45px;
+  margin-bottom: 50px;
+}
+
+.examples__container {
+  width: 320px;
+
+  padding: 0;
+}
+
+/* Translate */
+
+.examples__items {
+  margin-bottom: 75px;
+  background-color: #666;
+  outline: 2px solid #2196f3;
+}
+
+[class*='__body'] {
+  width: 320px;
+  height: 320px;
+  background-color: #b0f312;
+  opacity: 0.7;
+  outline: 2px solid #2196f3;
+}
+
+.translate__body {
+  transform: translate(-25px, 25px);
+}
+
+.translate__body:hover {
+  transform: translate(0);
+}
+
+/* Scale */
+
+.scale__body {
+  transform: scale(0.3);
+}
+
+.scale__body:hover {
+  transform: scale(1);
+}
+
+/* rotate */
+
+.rotate__body {
+  transform: rotate(10deg);
+}
+
+.rotate__body:hover {
+  transform: rotate(0);
+}
+
+/* skew */
+
+.skew__body {
+  transform: skew(-10deg, 0);
+}
+
+.skew__body:hover {
+  transform: skew(0);
+}
+
+/* matrix */
+
+.matrix__body {
+  transform: matrix(0.5, 0.1, 0.1, 0.5, 10, 15);
+}
+
+.matrix__body:hover {
+  transform: matrix(0, 1, 1, 0, 0, 0);
+}
+
+/*  multiple-2d  */
+
+.multiple-2d__body {
+  transform: translate(30px, 30px) rotate(45deg) scale(0.8);
+}
+
+.multiple-2d__body:hover {
+  transform: translate(0, 0) rotate(0) scale(1, 1);
+}
+
+/* transform-origin__body */
+
+.transform-origin__body {
+  transform-origin: 0 0;
+  transform: rotate(15deg);
+}
+
+.transform-origin__body:hover {
+  transform-origin: 100% 0;
+  transform: rotate(-15deg);
+}
+
+/* Perspective */
+
+.perspective {
+  perspective: 600px;
+  perspective-origin: 50px 50px;
+}
+
+.perspective__body {
+  transform: rotateX(50deg);
+}
+
+.perspective:hover .perspective__body {
+  transform: rotateX(0);
+}
+
+/* transform-style */
+
+.transform-style {
+  perspective: 300px;
+  transform-style: preserve-3d;
+}
+
+.transform-style__body {
+  transform: rotateY(-30deg);
+}
+
+.transform-style:hover .transform-style__body {
+  transform: rotateY(30deg);
+}
+
+/* Backface-visibility */
+
+.backface-visibility__body p {
+  font-weight: 900;
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+  top: 35%;
+}
+
+.backface-visibility {
+  perspective: 400px;
+  /* transform-style: preserve-3d; */
+}
+
+.backface-visibility__body {
+  transition: all 0.6s ease 0s;
+}
+
+.backface-visibility:hover .backface-visibility__body {
+  backface-visibility: visible;
+  transform: rotateY(180deg);
 }
 
 /* footer */
