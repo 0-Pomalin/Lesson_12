@@ -299,6 +299,21 @@ body {
   z-index: 1;
 }
 
+.ufo__house {
+  background: url('../img/house.svg') center/ contain no-repeat;
+  width: 526px;
+  height: 203px;
+  position: absolute;
+  bottom: 32px;
+  right: 8px;
+  z-index: 1;
+}
+
+.ufo__container:hover .ufo__house {
+  transform: skew(10deg, 10deg);
+  z-index: 3;
+}
+
 .ufo__tree-right {
   background: url('../img/tree-right.svg') center/ contain no-repeat;
   width: 100px;
@@ -310,8 +325,8 @@ body {
 }
 
 .ufo__container:hover .ufo__tree-right {
-  transform-origin: bottom center;
-  transform: rotate(-5deg);
+  transform-origin: bottom bottom;
+  transform: rotate(-25deg);
 }
 
 .ufo__tree-left {
@@ -325,8 +340,53 @@ body {
 }
 
 .ufo__container:hover .ufo__tree-left {
-  transform-origin: bottom center;
-  transform: rotate(-5deg);
+  transform-origin: bottom bottom;
+  transform: rotate(55deg);
+}
+
+.ufo__cow {
+  background: url('../img/cow.svg') center/ contain no-repeat;
+  width: 110px;
+  height: 115px;
+  position: absolute;
+  bottom: 15px;
+  left: 290px;
+  z-index: 2;
+  transform: rotate(-13deg);
+}
+
+.ufo__container:hover .ufo__cow {
+  transform: translate(30%, -150%) rotate(-25deg);
+}
+
+.ufo__ufo-body {
+  background: url('../img/ufo.svg') center/ contain no-repeat;
+  position: absolute;
+  width: 73px;
+  height: 40px;
+  top: 225px;
+  left: 82px;
+  z-index: 1;
+  transform: rotate(-20deg);
+}
+
+.ufo__container:hover .ufo__ufo-body {
+  visibility: hidden;
+}
+
+.ufo__lift-ray {
+  visibility: hidden;
+  background: url('../img/ufo-lift-ray.svg') center/ contain no-repeat;
+  width: 673px;
+  height: 537px;
+  position: absolute;
+  bottom: 20px;
+  left: 82px;
+  z-index: 1;
+}
+
+.ufo__container:hover .ufo__lift-ray {
+  visibility: visible;
 }
 
 /* footer */
